@@ -14,3 +14,5 @@ jobs:
           env
           echo '------$GITHUB_ENV--------'
           echo $GITHUB_ENV
+          echo '------set--------'
+          set
