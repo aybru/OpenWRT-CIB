@@ -1,0 +1,15 @@
+name: test
+on:
+  workflow_dispatch:
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+jobs:
+  core:
+    name: test
+    runs-on: ubuntu-26.04
+    steps:
+      - name:
+        run: |
+          env
+          echo $GITHUB_ENV
